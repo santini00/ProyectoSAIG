@@ -45,11 +45,6 @@
     <Compile Include="notificaciones.cs">
       <DependentUpon>Notificaciones.tt</DependentUpon>
     </Compile>
-    <Compile Include="Notificaciones1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Notificaciones.tt</DependentUpon>
-    </Compile>
     <Compile Include="notificaciones_usuarios.cs">
       <DependentUpon>Notificaciones.tt</DependentUpon>
     </Compile>

@@ -14,16 +14,28 @@ namespace appNotificaciones.Presentación
         {
             if (!Page.IsPostBack)
             {
-                getDatos();
+                getDatosUsuarios();
+                getDatosNotificaciones();
             }
         }
-        private void getDatos()
+        private void getDatosUsuarios()
         {
             List<usuario> sf = UsuarioNegocios.getUsuarios();
 
             foreach(var items in sf)
             {
-                LblDatos.Text += items.nombre;
+                LblDatosUsuario.Text += items.nombre;
+            }
+
+        }
+
+        private void getDatosNotificaciones()
+        {
+            List<notificaciones> sf = NotificacionesNegocios.getNotificaciones();
+
+            foreach (var items in sf)
+            {
+                LblDatosNotificaciones.Text += items.mensaje+"</br>";
             }
 
         }

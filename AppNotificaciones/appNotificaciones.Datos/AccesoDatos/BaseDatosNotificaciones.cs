@@ -19,6 +19,16 @@ namespace appNotificaciones.Datos.AccesoDatos
 
         }
 
+        public List<notificaciones> getNotificaciones()
+        {
+
+            using (NotificacionesEntities db = new NotificacionesEntities())
+            {
+                return db.notificaciones.ToList();
+            }
+
+        }
+
     }
 }
 

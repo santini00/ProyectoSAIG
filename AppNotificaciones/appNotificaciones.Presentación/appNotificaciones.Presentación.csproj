@@ -75,6 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -84,6 +85,13 @@
     </Compile>
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -97,10 +105,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\appNotificaciones.Datos\appNotificaciones.Datos.csproj">
-      <Project>{c4140751-3c4c-44be-81fc-ce853b52ec27}</Project>
-      <Name>appNotificaciones.Datos</Name>
-    </ProjectReference>
     <ProjectReference Include="..\appNotificaciones.Entidades\appNotificaciones.Entidades.csproj">
       <Project>{f1ef9517-5746-4396-82d1-58de5188d3a3}</Project>
       <Name>appNotificaciones.Entidades</Name>
