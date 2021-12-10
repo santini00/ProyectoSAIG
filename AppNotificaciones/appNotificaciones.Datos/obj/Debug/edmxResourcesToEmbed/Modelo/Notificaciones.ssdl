@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NotificacionesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="notificaciones">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="titulo" Type="varchar" MaxLength="50" />
+    <Property Name="fecha" Type="datetime" />
+    <Property Name="mensaje" Type="varchar(max)" />
+    <Property Name="eliminado" Type="bit" />
+    <Property Name="leido" Type="bit" />
+    <Property Name="id_sistemas" Type="int" />
+  </EntityType>
+  <EntityType Name="notificaciones_usuarios">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_usuarios" Type="int" />
+    <Property Name="id_notificaciones" Type="int" />
+  </EntityType>
+  <EntityType Name="sistemas">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="usuario">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="nombre_usuario" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="contrasenia" Type="varchar" MaxLength="8" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_notificaciones_sistemas">
+    <End Role="sistemas" Type="Self.sistemas" Multiplicity="0..1" />
+    <End Role="notificaciones" Type="Self.notificaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sistemas">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="notificaciones">
+        <PropertyRef Name="id_sistemas" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_notificaciones_usuarios_notificaciones">
+    <End Role="notificaciones" Type="Self.notificaciones" Multiplicity="0..1" />
+    <End Role="notificaciones_usuarios" Type="Self.notificaciones_usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="notificaciones">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="notificaciones_usuarios">
+        <PropertyRef Name="id_notificaciones" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_notificaciones_usuarios_usuario">
+    <End Role="usuario" Type="Self.usuario" Multiplicity="0..1" />
+    <End Role="notificaciones_usuarios" Type="Self.notificaciones_usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuario">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="notificaciones_usuarios">
+        <PropertyRef Name="id_usuarios" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="NotificacionesModelStoreContainer">
+    <EntitySet Name="notificaciones" EntityType="Self.notificaciones" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="notificaciones_usuarios" EntityType="Self.notificaciones_usuarios" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sistemas" EntityType="Self.sistemas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="usuario" EntityType="Self.usuario" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_notificaciones_sistemas" Association="Self.FK_notificaciones_sistemas">
+      <End Role="sistemas" EntitySet="sistemas" />
+      <End Role="notificaciones" EntitySet="notificaciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_notificaciones_usuarios_notificaciones" Association="Self.FK_notificaciones_usuarios_notificaciones">
+      <End Role="notificaciones" EntitySet="notificaciones" />
+      <End Role="notificaciones_usuarios" EntitySet="notificaciones_usuarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_notificaciones_usuarios_usuario" Association="Self.FK_notificaciones_usuarios_usuario">
+      <End Role="usuario" EntitySet="usuario" />
+      <End Role="notificaciones_usuarios" EntitySet="notificaciones_usuarios" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

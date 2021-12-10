@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NotificacionesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="notificaciones">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="titulo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fecha" Type="DateTime" Precision="3" />
+    <Property Name="mensaje" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="eliminado" Type="Boolean" />
+    <Property Name="leido" Type="Boolean" />
+    <Property Name="id_sistemas" Type="Int32" />
+    <NavigationProperty Name="sistemas" Relationship="Self.FK_notificaciones_sistemas" FromRole="notificaciones" ToRole="sistemas" />
+    <NavigationProperty Name="notificaciones_usuarios" Relationship="Self.FK_notificaciones_usuarios_notificaciones" FromRole="notificaciones" ToRole="notificaciones_usuarios" />
+  </EntityType>
+  <EntityType Name="notificaciones_usuarios">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_usuarios" Type="Int32" />
+    <Property Name="id_notificaciones" Type="Int32" />
+    <NavigationProperty Name="notificaciones" Relationship="Self.FK_notificaciones_usuarios_notificaciones" FromRole="notificaciones_usuarios" ToRole="notificaciones" />
+    <NavigationProperty Name="usuario" Relationship="Self.FK_notificaciones_usuarios_usuario" FromRole="notificaciones_usuarios" ToRole="usuario" />
+  </EntityType>
+  <EntityType Name="sistemas">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="notificaciones" Relationship="Self.FK_notificaciones_sistemas" FromRole="sistemas" ToRole="notificaciones" />
+  </EntityType>
+  <EntityType Name="usuario">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nombre_usuario" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="contrasenia" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="notificaciones_usuarios" Relationship="Self.FK_notificaciones_usuarios_usuario" FromRole="usuario" ToRole="notificaciones_usuarios" />
+  </EntityType>
+  <Association Name="FK_notificaciones_sistemas">
+    <End Role="sistemas" Type="Self.sistemas" Multiplicity="0..1" />
+    <End Role="notificaciones" Type="Self.notificaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sistemas">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="notificaciones">
+        <PropertyRef Name="id_sistemas" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_notificaciones_usuarios_notificaciones">
+    <End Role="notificaciones" Type="Self.notificaciones" Multiplicity="0..1" />
+    <End Role="notificaciones_usuarios" Type="Self.notificaciones_usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="notificaciones">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="notificaciones_usuarios">
+        <PropertyRef Name="id_notificaciones" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_notificaciones_usuarios_usuario">
+    <End Role="usuario" Type="Self.usuario" Multiplicity="0..1" />
+    <End Role="notificaciones_usuarios" Type="Self.notificaciones_usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuario">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="notificaciones_usuarios">
+        <PropertyRef Name="id_usuarios" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="NotificacionesEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="notificaciones" EntityType="Self.notificaciones" />
+    <EntitySet Name="notificaciones_usuarios" EntityType="Self.notificaciones_usuarios" />
+    <EntitySet Name="sistemas" EntityType="Self.sistemas" />
+    <EntitySet Name="usuario" EntityType="Self.usuario" />
+    <AssociationSet Name="FK_notificaciones_sistemas" Association="Self.FK_notificaciones_sistemas">
+      <End Role="sistemas" EntitySet="sistemas" />
+      <End Role="notificaciones" EntitySet="notificaciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_notificaciones_usuarios_notificaciones" Association="Self.FK_notificaciones_usuarios_notificaciones">
+      <End Role="notificaciones" EntitySet="notificaciones" />
+      <End Role="notificaciones_usuarios" EntitySet="notificaciones_usuarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_notificaciones_usuarios_usuario" Association="Self.FK_notificaciones_usuarios_usuario">
+      <End Role="usuario" EntitySet="usuario" />
+      <End Role="notificaciones_usuarios" EntitySet="notificaciones_usuarios" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
