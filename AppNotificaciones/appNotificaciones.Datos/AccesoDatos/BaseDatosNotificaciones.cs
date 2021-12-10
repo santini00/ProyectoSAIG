@@ -9,12 +9,15 @@ namespace appNotificaciones.Datos.AccesoDatos
 {
     public class BaseDatosNotificaciones
     {
-        public List<usuario>()
+        public List<usuario> getUsuarios()
+        {
+
+            using (NotificacionesEntities db = new NotificacionesEntities())
             {
-
+                return db.usuario.ToList();
             }
-        
 
+        }
     }
 }
 
