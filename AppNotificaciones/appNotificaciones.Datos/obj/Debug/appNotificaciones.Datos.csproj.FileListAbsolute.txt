@@ -1,0 +1,14 @@
+C:\Users\santi\Desktop\Servicio\ProyectoSAIG\AppNotificaciones\appNotificaciones.Datos\bin\Debug\appNotificaciones.Datos.dll.config
+C:\Users\santi\Desktop\Servicio\ProyectoSAIG\AppNotificaciones\appNotificaciones.Datos\bin\Debug\appNotificaciones.Datos.dll
+C:\Users\santi\Desktop\Servicio\ProyectoSAIG\AppNotificaciones\appNotificaciones.Datos\bin\Debug\appNotificaciones.Datos.pdb
+C:\Users\santi\Desktop\Servicio\ProyectoSAIG\AppNotificaciones\appNotificaciones.Datos\bin\Debug\appNotificaciones.Entidades.dll
+C:\Users\santi\Desktop\Servicio\ProyectoSAIG\AppNotificaciones\appNotificaciones.Datos\bin\Debug\EntityFramework.dll
+C:\Users\santi\Desktop\Servicio\ProyectoSAIG\AppNotificaciones\appNotificaciones.Datos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\santi\Desktop\Servicio\ProyectoSAIG\AppNotificaciones\appNotificaciones.Datos\bin\Debug\appNotificaciones.Entidades.pdb
+C:\Users\santi\Desktop\Servicio\ProyectoSAIG\AppNotificaciones\appNotificaciones.Datos\bin\Debug\EntityFramework.xml
+C:\Users\santi\Desktop\Servicio\ProyectoSAIG\AppNotificaciones\appNotificaciones.Datos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\santi\Desktop\Servicio\ProyectoSAIG\AppNotificaciones\appNotificaciones.Datos\obj\Debug\appNotificaciones.Datos.csprojAssemblyReference.cache
+C:\Users\santi\Desktop\Servicio\ProyectoSAIG\AppNotificaciones\appNotificaciones.Datos\obj\Debug\appNotificaciones.Datos.csproj.CoreCompileInputs.cache
+C:\Users\santi\Desktop\Servicio\ProyectoSAIG\AppNotificaciones\appNotificaciones.Datos\obj\Debug\appNotificaciones.Datos.csproj.CopyComplete
+C:\Users\santi\Desktop\Servicio\ProyectoSAIG\AppNotificaciones\appNotificaciones.Datos\obj\Debug\appNotificaciones.Datos.dll
+C:\Users\santi\Desktop\Servicio\ProyectoSAIG\AppNotificaciones\appNotificaciones.Datos\obj\Debug\appNotificaciones.Datos.pdb

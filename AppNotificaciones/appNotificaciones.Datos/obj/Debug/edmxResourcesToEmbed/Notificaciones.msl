@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NotificacionesModelStoreContainer" CdmEntityContainer="NotificacionesEntities">
+    <EntitySetMapping Name="notificaciones">
+      <EntityTypeMapping TypeName="NotificacionesModel.notificaciones">
+        <MappingFragment StoreEntitySet="notificaciones">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="titulo" ColumnName="titulo" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="mensaje" ColumnName="mensaje" />
+          <ScalarProperty Name="eliminado" ColumnName="eliminado" />
+          <ScalarProperty Name="leido" ColumnName="leido" />
+          <ScalarProperty Name="id_sistemas" ColumnName="id_sistemas" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="notificaciones_usuarios">
+      <EntityTypeMapping TypeName="NotificacionesModel.notificaciones_usuarios">
+        <MappingFragment StoreEntitySet="notificaciones_usuarios">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="id_usuarios" ColumnName="id_usuarios" />
+          <ScalarProperty Name="id_notificaciones" ColumnName="id_notificaciones" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sistemas">
+      <EntityTypeMapping TypeName="NotificacionesModel.sistemas">
+        <MappingFragment StoreEntitySet="sistemas">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usuario">
+      <EntityTypeMapping TypeName="NotificacionesModel.usuario">
+        <MappingFragment StoreEntitySet="usuario">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="nombre_usuario" ColumnName="nombre_usuario" />
+          <ScalarProperty Name="contrasenia" ColumnName="contrasenia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
