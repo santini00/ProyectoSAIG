@@ -12,3 +12,17 @@ C:\Users\santi\Desktop\Servicio\ProyectoSAIG\AppNotificaciones\appNotificaciones
 C:\Users\santi\Desktop\Servicio\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\obj\Debug\appNotificaciones.Negocios.csproj.CopyComplete
 C:\Users\santi\Desktop\Servicio\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\obj\Debug\appNotificaciones.Negocios.dll
 C:\Users\santi\Desktop\Servicio\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\obj\Debug\appNotificaciones.Negocios.pdb
+C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\bin\Debug\appNotificaciones.Negocios.dll
+C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\bin\Debug\appNotificaciones.Negocios.pdb
+C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\bin\Debug\appNotificaciones.Datos.dll
+C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\bin\Debug\appNotificaciones.Entidades.dll
+C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\bin\Debug\EntityFramework.dll
+C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\bin\Debug\appNotificaciones.Datos.pdb
+C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\bin\Debug\appNotificaciones.Datos.dll.config
+C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\bin\Debug\appNotificaciones.Entidades.pdb
+C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\bin\Debug\EntityFramework.xml
+C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\obj\Debug\appNotificaciones.Negocios.csproj.AssemblyReference.cache
+C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\obj\Debug\appNotificaciones.Negocios.csproj.CoreCompileInputs.cache
+C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\obj\Debug\appNotificaciones.Negocios.csproj.CopyComplete
+C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\obj\Debug\appNotificaciones.Negocios.dll
+C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\obj\Debug\appNotificaciones.Negocios.pdb

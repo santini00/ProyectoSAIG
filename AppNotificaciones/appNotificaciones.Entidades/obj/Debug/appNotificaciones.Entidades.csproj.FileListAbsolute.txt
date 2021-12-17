@@ -4,3 +4,9 @@ C:\Users\santi\Desktop\Servicio\ProyectoSAIG\AppNotificaciones\appNotificaciones
 C:\Users\santi\Desktop\Servicio\ProyectoSAIG\AppNotificaciones\appNotificaciones.Entidades\obj\Debug\appNotificaciones.Entidades.dll
 C:\Users\santi\Desktop\Servicio\ProyectoSAIG\AppNotificaciones\appNotificaciones.Entidades\obj\Debug\appNotificaciones.Entidades.pdb
 C:\Users\santi\Desktop\Servicio\ProyectoSAIG\AppNotificaciones\appNotificaciones.Entidades\obj\Debug\appNotificaciones.Entidades.csprojAssemblyReference.cache
+C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNotificaciones.Entidades\bin\Debug\appNotificaciones.Entidades.dll
+C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNotificaciones.Entidades\bin\Debug\appNotificaciones.Entidades.pdb
+C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNotificaciones.Entidades\obj\Debug\appNotificaciones.Entidades.csproj.AssemblyReference.cache
+C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNotificaciones.Entidades\obj\Debug\appNotificaciones.Entidades.csproj.CoreCompileInputs.cache
+C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNotificaciones.Entidades\obj\Debug\appNotificaciones.Entidades.dll
+C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNotificaciones.Entidades\obj\Debug\appNotificaciones.Entidades.pdb
