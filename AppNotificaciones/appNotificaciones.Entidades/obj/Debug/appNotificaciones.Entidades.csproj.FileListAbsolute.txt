@@ -15,3 +15,8 @@ E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Entidades\bi
 E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Entidades\obj\Debug\appNotificaciones.Entidades.csproj.CoreCompileInputs.cache
 E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Entidades\obj\Debug\appNotificaciones.Entidades.dll
 E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Entidades\obj\Debug\appNotificaciones.Entidades.pdb
+C:\Users\santi\Documents\Escuela\Servicio Social\Proyecto\ProyectoSAIG\AppNotificaciones\appNotificaciones.Entidades\bin\Debug\appNotificaciones.Entidades.dll
+C:\Users\santi\Documents\Escuela\Servicio Social\Proyecto\ProyectoSAIG\AppNotificaciones\appNotificaciones.Entidades\bin\Debug\appNotificaciones.Entidades.pdb
+C:\Users\santi\Documents\Escuela\Servicio Social\Proyecto\ProyectoSAIG\AppNotificaciones\appNotificaciones.Entidades\obj\Debug\appNotificaciones.Entidades.csproj.CoreCompileInputs.cache
+C:\Users\santi\Documents\Escuela\Servicio Social\Proyecto\ProyectoSAIG\AppNotificaciones\appNotificaciones.Entidades\obj\Debug\appNotificaciones.Entidades.dll
+C:\Users\santi\Documents\Escuela\Servicio Social\Proyecto\ProyectoSAIG\AppNotificaciones\appNotificaciones.Entidades\obj\Debug\appNotificaciones.Entidades.pdb
