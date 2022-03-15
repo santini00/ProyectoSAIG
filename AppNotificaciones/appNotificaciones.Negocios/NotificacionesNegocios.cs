@@ -16,5 +16,13 @@ namespace appNotificaciones.Negocios
 
             return a.getNotificaciones();
         }
+
+        public static List<notificaciones_usuarios> getNotificacionesUsuario()
+        {
+            BaseDatosNotificaciones a = new BaseDatosNotificaciones();
+
+
+            return a.getNotificacionesUsuarios();
+        }
     }
 }

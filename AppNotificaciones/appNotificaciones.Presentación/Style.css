@@ -1,0 +1,88 @@
+﻿
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.container {
+    position: relative;
+    width: 500px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: #607d8b;
+}
+.formLogin {
+    position: absolute;
+
+}
+
+.card {
+    position: relative;
+    width: 450px;
+    height: 500px;
+
+}
+
+.imgLogoSAIG{
+    position: relative;
+    width: 455px;
+    height: 140px;
+
+}
+
+.inputBox {
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    margin-bottom: 20px;
+    top: 25px;
+}
+
+span {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #607d8b;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.input {
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid #607d8b;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #607d8b;
+    background: transparent;
+    border-radius: 30px;
+}
+
+btnIniciarSesion {
+    background: #6720ec;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}

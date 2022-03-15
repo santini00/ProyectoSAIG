@@ -4,99 +4,98 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="NotificacionesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <EntityType Name="notificaciones">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="titulo" Type="varchar" MaxLength="50" />
-          <Property Name="fecha" Type="datetime" />
-          <Property Name="mensaje" Type="varchar(max)" />
-          <Property Name="eliminado" Type="bit" />
-          <Property Name="leido" Type="bit" />
-          <Property Name="id_sistemas" Type="int" />
-        </EntityType>
-        <EntityType Name="notificaciones_usuarios">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="id_usuarios" Type="int" />
-          <Property Name="id_notificaciones" Type="int" />
-        </EntityType>
-        <EntityType Name="sistemas">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="nombre" Type="varchar" MaxLength="50" />
-        </EntityType>
-        <EntityType Name="usuario">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="nombre" Type="varchar" MaxLength="200" Nullable="false" />
-          <Property Name="nombre_usuario" Type="varchar" MaxLength="8" Nullable="false" />
-          <Property Name="contrasenia" Type="varchar" MaxLength="8" Nullable="false" />
-        </EntityType>
-        <Association Name="FK_notificaciones_sistemas">
-          <End Role="sistemas" Type="Self.sistemas" Multiplicity="0..1" />
-          <End Role="notificaciones" Type="Self.notificaciones" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="sistemas">
-              <PropertyRef Name="id" />
-            </Principal>
-            <Dependent Role="notificaciones">
-              <PropertyRef Name="id_sistemas" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_notificaciones_usuarios_notificaciones">
-          <End Role="notificaciones" Type="Self.notificaciones" Multiplicity="0..1" />
-          <End Role="notificaciones_usuarios" Type="Self.notificaciones_usuarios" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="notificaciones">
-              <PropertyRef Name="id" />
-            </Principal>
-            <Dependent Role="notificaciones_usuarios">
-              <PropertyRef Name="id_notificaciones" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_notificaciones_usuarios_usuario">
-          <End Role="usuario" Type="Self.usuario" Multiplicity="0..1" />
-          <End Role="notificaciones_usuarios" Type="Self.notificaciones_usuarios" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="usuario">
-              <PropertyRef Name="id" />
-            </Principal>
-            <Dependent Role="notificaciones_usuarios">
-              <PropertyRef Name="id_usuarios" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <EntityContainer Name="NotificacionesModelStoreContainer">
-          <EntitySet Name="notificaciones" EntityType="Self.notificaciones" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="notificaciones_usuarios" EntityType="Self.notificaciones_usuarios" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="sistemas" EntityType="Self.sistemas" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="usuario" EntityType="Self.usuario" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK_notificaciones_sistemas" Association="Self.FK_notificaciones_sistemas">
-            <End Role="sistemas" EntitySet="sistemas" />
-            <End Role="notificaciones" EntitySet="notificaciones" />
-          </AssociationSet>
-          <AssociationSet Name="FK_notificaciones_usuarios_notificaciones" Association="Self.FK_notificaciones_usuarios_notificaciones">
-            <End Role="notificaciones" EntitySet="notificaciones" />
-            <End Role="notificaciones_usuarios" EntitySet="notificaciones_usuarios" />
-          </AssociationSet>
-          <AssociationSet Name="FK_notificaciones_usuarios_usuario" Association="Self.FK_notificaciones_usuarios_usuario">
-            <End Role="usuario" EntitySet="usuario" />
-            <End Role="notificaciones_usuarios" EntitySet="notificaciones_usuarios" />
-          </AssociationSet>
-        </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+    <Schema Namespace="NotificacionesModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="NotificacionesModelStoreContainer">
+    <EntitySet Name="notificaciones" EntityType="NotificacionesModel.Store.notificaciones" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="notificaciones_usuarios" EntityType="NotificacionesModel.Store.notificaciones_usuarios" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sistemas" EntityType="NotificacionesModel.Store.sistemas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="usuario" EntityType="NotificacionesModel.Store.usuario" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_notificaciones_sistemas" Association="NotificacionesModel.Store.FK_notificaciones_sistemas">
+      <End Role="sistemas" EntitySet="sistemas" />
+      <End Role="notificaciones" EntitySet="notificaciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_notificaciones_usuarios_notificaciones" Association="NotificacionesModel.Store.FK_notificaciones_usuarios_notificaciones">
+      <End Role="notificaciones" EntitySet="notificaciones" />
+      <End Role="notificaciones_usuarios" EntitySet="notificaciones_usuarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_notificaciones_usuarios_usuario" Association="NotificacionesModel.Store.FK_notificaciones_usuarios_usuario">
+      <End Role="usuario" EntitySet="usuario" />
+      <End Role="notificaciones_usuarios" EntitySet="notificaciones_usuarios" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="notificaciones">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="titulo" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="fecha" Type="datetime" Nullable="true" />
+    <Property Name="mensaje" Type="varchar(max)" Nullable="true" />
+    <Property Name="eliminado" Type="bit" Nullable="true" />
+    <Property Name="leido" Type="bit" Nullable="true" />
+    <Property Name="id_sistemas" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="notificaciones_usuarios">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_usuarios" Type="int" Nullable="true" />
+    <Property Name="id_notificaciones" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="sistemas">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="usuario">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="nombre_usuario" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="contrasenia" Type="varchar" Nullable="false" MaxLength="8" />
+  </EntityType>
+  <Association Name="FK_notificaciones_sistemas">
+    <End Role="sistemas" Type="NotificacionesModel.Store.sistemas" Multiplicity="0..1" />
+    <End Role="notificaciones" Type="NotificacionesModel.Store.notificaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sistemas">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="notificaciones">
+        <PropertyRef Name="id_sistemas" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_notificaciones_usuarios_notificaciones">
+    <End Role="notificaciones" Type="NotificacionesModel.Store.notificaciones" Multiplicity="0..1" />
+    <End Role="notificaciones_usuarios" Type="NotificacionesModel.Store.notificaciones_usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="notificaciones">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="notificaciones_usuarios">
+        <PropertyRef Name="id_notificaciones" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_notificaciones_usuarios_usuario">
+    <End Role="usuario" Type="NotificacionesModel.Store.usuario" Multiplicity="0..1" />
+    <End Role="notificaciones_usuarios" Type="NotificacionesModel.Store.notificaciones_usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuario">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="notificaciones_usuarios">
+        <PropertyRef Name="id_usuarios" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="NotificacionesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -200,51 +199,50 @@
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
-      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="NotificacionesModelStoreContainer" CdmEntityContainer="NotificacionesEntities">
-          <EntitySetMapping Name="notificaciones">
-            <EntityTypeMapping TypeName="NotificacionesModel.notificaciones">
-              <MappingFragment StoreEntitySet="notificaciones">
-                <ScalarProperty Name="id" ColumnName="id" />
-                <ScalarProperty Name="titulo" ColumnName="titulo" />
-                <ScalarProperty Name="fecha" ColumnName="fecha" />
-                <ScalarProperty Name="mensaje" ColumnName="mensaje" />
-                <ScalarProperty Name="eliminado" ColumnName="eliminado" />
-                <ScalarProperty Name="leido" ColumnName="leido" />
-                <ScalarProperty Name="id_sistemas" ColumnName="id_sistemas" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="notificaciones_usuarios">
-            <EntityTypeMapping TypeName="NotificacionesModel.notificaciones_usuarios">
-              <MappingFragment StoreEntitySet="notificaciones_usuarios">
-                <ScalarProperty Name="id" ColumnName="id" />
-                <ScalarProperty Name="id_usuarios" ColumnName="id_usuarios" />
-                <ScalarProperty Name="id_notificaciones" ColumnName="id_notificaciones" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="sistemas">
-            <EntityTypeMapping TypeName="NotificacionesModel.sistemas">
-              <MappingFragment StoreEntitySet="sistemas">
-                <ScalarProperty Name="id" ColumnName="id" />
-                <ScalarProperty Name="nombre" ColumnName="nombre" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="usuario">
-            <EntityTypeMapping TypeName="NotificacionesModel.usuario">
-              <MappingFragment StoreEntitySet="usuario">
-                <ScalarProperty Name="id" ColumnName="id" />
-                <ScalarProperty Name="nombre" ColumnName="nombre" />
-                <ScalarProperty Name="nombre_usuario" ColumnName="nombre_usuario" />
-                <ScalarProperty Name="contrasenia" ColumnName="contrasenia" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-        </EntityContainerMapping>
-      </Mapping>
-    </edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NotificacionesModelStoreContainer" CdmEntityContainer="NotificacionesEntities">
+    <EntitySetMapping Name="notificaciones">
+      <EntityTypeMapping TypeName="IsTypeOf(NotificacionesModel.notificaciones)">
+        <MappingFragment StoreEntitySet="notificaciones">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="titulo" ColumnName="titulo" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="mensaje" ColumnName="mensaje" />
+          <ScalarProperty Name="eliminado" ColumnName="eliminado" />
+          <ScalarProperty Name="leido" ColumnName="leido" />
+          <ScalarProperty Name="id_sistemas" ColumnName="id_sistemas" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="notificaciones_usuarios">
+      <EntityTypeMapping TypeName="IsTypeOf(NotificacionesModel.notificaciones_usuarios)">
+        <MappingFragment StoreEntitySet="notificaciones_usuarios">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="id_usuarios" ColumnName="id_usuarios" />
+          <ScalarProperty Name="id_notificaciones" ColumnName="id_notificaciones" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sistemas">
+      <EntityTypeMapping TypeName="IsTypeOf(NotificacionesModel.sistemas)">
+        <MappingFragment StoreEntitySet="sistemas">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usuario">
+      <EntityTypeMapping TypeName="IsTypeOf(NotificacionesModel.usuario)">
+        <MappingFragment StoreEntitySet="usuario">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="nombre_usuario" ColumnName="nombre_usuario" />
+          <ScalarProperty Name="contrasenia" ColumnName="contrasenia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
   </edmx:Runtime>
   <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
   <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
@@ -258,7 +256,7 @@
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
         <DesignerProperty Name="EnablePluralization" Value="false" />
         <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
-        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
         <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
       </DesignerInfoPropertySet>
     </Options>

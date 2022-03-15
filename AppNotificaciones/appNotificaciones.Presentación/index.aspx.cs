@@ -16,6 +16,7 @@ namespace appNotificaciones.Presentación
             {
                 getDatosUsuarios();
                 getDatosNotificaciones();
+                getDatosNotificacionesUsuario();
             }
         }
         private void getDatosUsuarios()
@@ -36,6 +37,17 @@ namespace appNotificaciones.Presentación
             foreach (var items in sf)
             {
                 LblDatosNotificaciones.Text += items.mensaje+"</br>";
+            }
+
+        }
+
+        private void getDatosNotificacionesUsuario()
+        {
+            List<notificaciones_usuarios> sf = NotificacionesNegocios.getNotificacionesUsuario();
+
+            foreach (var items in sf)
+            {
+                LblDatosNotificaciones.Text += items.id + "</br>";
             }
 
         }

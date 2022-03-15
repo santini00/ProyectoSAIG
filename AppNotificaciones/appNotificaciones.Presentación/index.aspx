@@ -11,10 +11,11 @@
     <form id="form1" runat="server">
         <div>
         </div>
+
         <asp:Label ID="LblDatosUsuario" runat="server" ></asp:Label>
-        <br>
-            <asp:Label ID="LblDatosNotificaciones" runat="server"></asp:Label>
-        </br>
+        
+        <asp:Label ID="LblDatosNotificaciones" runat="server"></asp:Label>
+            
     </form>
 </body>
 </html>

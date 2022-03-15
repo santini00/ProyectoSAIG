@@ -26,3 +26,20 @@ C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNo
 C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\obj\Debug\appNotificaciones.Negocios.csproj.CopyComplete
 C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\obj\Debug\appNotificaciones.Negocios.dll
 C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\obj\Debug\appNotificaciones.Negocios.pdb
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\obj\Debug\appNotificaciones.Negocios.csproj.AssemblyReference.cache
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\obj\Debug\appNotificaciones.Negocios.csproj.CoreCompileInputs.cache
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\bin\Debug\appNotificaciones.Negocios.dll.config
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\bin\Debug\appNotificaciones.Negocios.dll
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\bin\Debug\appNotificaciones.Negocios.pdb
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\bin\Debug\appNotificaciones.Datos.dll
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\bin\Debug\appNotificaciones.Entidades.dll
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\bin\Debug\EntityFramework.dll
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\bin\Debug\EntityFramework.SqlServer.dll
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\bin\Debug\appNotificaciones.Datos.pdb
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\bin\Debug\appNotificaciones.Datos.dll.config
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\bin\Debug\appNotificaciones.Entidades.pdb
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\bin\Debug\EntityFramework.xml
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\bin\Debug\EntityFramework.SqlServer.xml
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\obj\Debug\appNotificaciones.Negocios.csproj.CopyComplete
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\obj\Debug\appNotificaciones.Negocios.dll
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Negocios\obj\Debug\appNotificaciones.Negocios.pdb

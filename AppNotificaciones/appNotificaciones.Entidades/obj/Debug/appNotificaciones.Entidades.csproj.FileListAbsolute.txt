@@ -10,3 +10,8 @@ C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNo
 C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNotificaciones.Entidades\obj\Debug\appNotificaciones.Entidades.csproj.CoreCompileInputs.cache
 C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNotificaciones.Entidades\obj\Debug\appNotificaciones.Entidades.dll
 C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNotificaciones.Entidades\obj\Debug\appNotificaciones.Entidades.pdb
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Entidades\bin\Debug\appNotificaciones.Entidades.dll
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Entidades\bin\Debug\appNotificaciones.Entidades.pdb
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Entidades\obj\Debug\appNotificaciones.Entidades.csproj.CoreCompileInputs.cache
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Entidades\obj\Debug\appNotificaciones.Entidades.dll
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Entidades\obj\Debug\appNotificaciones.Entidades.pdb

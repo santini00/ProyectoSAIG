@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Data;
+using System.Data.Common;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +11,8 @@ namespace appNotificaciones.Datos.AccesoDatos
 {
     public class BaseDatosNotificaciones
     {
+
+
         public List<usuario> getUsuarios()
         {
 
@@ -29,7 +33,17 @@ namespace appNotificaciones.Datos.AccesoDatos
 
         }
 
+        public List<notificaciones_usuarios> getNotificacionesUsuarios()
+        {
+
+            using (NotificacionesEntities db = new NotificacionesEntities())
+            {
+                return db.notificaciones_usuarios.ToList();
+            }
+
+        }
+
+
+
     }
 }
-
-

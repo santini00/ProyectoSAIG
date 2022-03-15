@@ -11,10 +11,24 @@ namespace appNotificaciones.Negocios
     {
         public static List<usuario> getUsuarios()
         {
-            BaseDatosNotificaciones a = new BaseDatosNotificaciones();
+            BaseDatosNotificaciones users = new BaseDatosNotificaciones();
 
 
-            return a.getUsuarios();
+            return users.getUsuarios();
+        }
+
+        public static usuario ObtenerUsuarioPorNombre(String nombreUsuario)
+        {
+            NotificacionesEntities db = new NotificacionesEntities();
+            var usuario = db.usuario.FirstOrDefault(x => x.nombre_usuario == nombreUsuario );
+            return usuario;
+        }
+
+        public static usuario ValidarLogin(String nombreUsuario, String password)
+        {
+            NotificacionesEntities db = new NotificacionesEntities();
+            var usuario = db.usuario.FirstOrDefault(x => x.nombre_usuario == nombreUsuario && x.contrasenia == password);
+            return usuario;
         }
     }
 }

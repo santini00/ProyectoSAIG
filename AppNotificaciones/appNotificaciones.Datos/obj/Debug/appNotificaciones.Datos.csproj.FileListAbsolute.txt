@@ -26,3 +26,17 @@ C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNo
 C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNotificaciones.Datos\obj\Debug\appNotificaciones.Datos.csproj.CopyComplete
 C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNotificaciones.Datos\obj\Debug\appNotificaciones.Datos.dll
 C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNotificaciones.Datos\obj\Debug\appNotificaciones.Datos.pdb
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Datos\bin\Debug\appNotificaciones.Datos.dll.config
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Datos\bin\Debug\appNotificaciones.Datos.dll
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Datos\bin\Debug\appNotificaciones.Datos.pdb
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Datos\bin\Debug\appNotificaciones.Entidades.dll
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Datos\bin\Debug\EntityFramework.dll
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Datos\bin\Debug\EntityFramework.SqlServer.dll
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Datos\bin\Debug\appNotificaciones.Entidades.pdb
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Datos\bin\Debug\EntityFramework.xml
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Datos\bin\Debug\EntityFramework.SqlServer.xml
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Datos\obj\Debug\appNotificaciones.Datos.csproj.AssemblyReference.cache
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Datos\obj\Debug\appNotificaciones.Datos.csproj.CoreCompileInputs.cache
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Datos\obj\Debug\appNotificaciones.Datos.csproj.CopyComplete
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Datos\obj\Debug\appNotificaciones.Datos.dll
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Datos\obj\Debug\appNotificaciones.Datos.pdb

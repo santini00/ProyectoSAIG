@@ -2,7 +2,7 @@
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="NotificacionesModelStoreContainer" CdmEntityContainer="NotificacionesEntities">
     <EntitySetMapping Name="notificaciones">
-      <EntityTypeMapping TypeName="NotificacionesModel.notificaciones">
+      <EntityTypeMapping TypeName="IsTypeOf(NotificacionesModel.notificaciones)">
         <MappingFragment StoreEntitySet="notificaciones">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="titulo" ColumnName="titulo" />
@@ -15,7 +15,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="notificaciones_usuarios">
-      <EntityTypeMapping TypeName="NotificacionesModel.notificaciones_usuarios">
+      <EntityTypeMapping TypeName="IsTypeOf(NotificacionesModel.notificaciones_usuarios)">
         <MappingFragment StoreEntitySet="notificaciones_usuarios">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="id_usuarios" ColumnName="id_usuarios" />
@@ -24,7 +24,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="sistemas">
-      <EntityTypeMapping TypeName="NotificacionesModel.sistemas">
+      <EntityTypeMapping TypeName="IsTypeOf(NotificacionesModel.sistemas)">
         <MappingFragment StoreEntitySet="sistemas">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="nombre" ColumnName="nombre" />
@@ -32,7 +32,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="usuario">
-      <EntityTypeMapping TypeName="NotificacionesModel.usuario">
+      <EntityTypeMapping TypeName="IsTypeOf(NotificacionesModel.usuario)">
         <MappingFragment StoreEntitySet="usuario">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="nombre" ColumnName="nombre" />

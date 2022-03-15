@@ -54,15 +54,37 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccesoDatos\BaseDatosNotificaciones.cs" />
+    <Compile Include="Modelo\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Modelo\Notificaciones.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Notificaciones.Context.tt</DependentUpon>
     </Compile>
+    <Compile Include="Modelo\notificaciones.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Modelo\Notificaciones.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Notificaciones.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\notificaciones_usuarios.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\sistemas.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\usuario.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -78,12 +100,23 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Modelo\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+      <DependentUpon>Notificaciones.edmx</DependentUpon>
+    </Content>
+    <Content Include="Modelo\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+      <DependentUpon>Notificaciones.edmx</DependentUpon>
+    </Content>
     <Content Include="Modelo\Notificaciones.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Notificaciones.edmx</DependentUpon>
       <LastGenOutput>Notificaciones.Context.cs</LastGenOutput>
       <CustomToolNamespace>appNotificaciones.Entidades</CustomToolNamespace>
     </Content>
+    <Content Include="Notificaciones.sql" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
