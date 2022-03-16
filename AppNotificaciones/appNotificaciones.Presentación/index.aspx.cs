@@ -51,5 +51,27 @@ namespace appNotificaciones.Presentación
             }
 
         }
+
+        private List<notificaciones_usuarios> getNotiUsuarios()
+        {
+            List<notificaciones_usuarios> sf = NotificacionesNegocios.getNotificacionesUsuario();
+            foreach(var items in sf)
+            {
+                
+            }
+            return sf;
+        }
+
+        private void MostrarDatosNotificacionesUsuario()
+        {
+            List<notificaciones_usuarios> sf = NotificacionesNegocios.getNotificacionesUsuario();
+
+            foreach (var items in sf)
+            {
+                LblDatosNotificaciones.Text += items.id + "</br>";
+
+            }
+
+        }
     }
 }

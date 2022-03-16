@@ -138,7 +138,6 @@ C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNo
 C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNotificaciones.Presentación\obj\Debug\appNotificaciones.Presentación.csproj.CopyComplete
 C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNotificaciones.Presentación\obj\Debug\appNotificaciones.Presentación.dll
 C:\Users\santi\Documents\ServicioSocialSAIG\ProyectoSAIG\AppNotificaciones\appNotificaciones.Presentación\obj\Debug\appNotificaciones.Presentación.pdb
-E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Presentación\obj\Debug\appNotificaciones.Presentación.csproj.CoreCompileInputs.cache
 E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Presentación\bin\appNotificaciones.Presentación.dll.config
 E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Presentación\bin\appNotificaciones.Presentación.dll
 E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Presentación\bin\appNotificaciones.Presentación.pdb
@@ -206,6 +205,7 @@ E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Presentació
 E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Presentación\bin\appNotificaciones.Datos.pdb
 E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Presentación\bin\appNotificaciones.Datos.dll.config
 E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Presentación\obj\Debug\appNotificaciones.Presentación.csproj.AssemblyReference.cache
+E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Presentación\obj\Debug\appNotificaciones.Presentación.csproj.CoreCompileInputs.cache
 E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Presentación\obj\Debug\appNotificaciones.Presentación.csproj.CopyComplete
 E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Presentación\obj\Debug\appNotificaciones.Presentación.dll
 E:\Servicio Social\ProyectoSAIG\AppNotificaciones\appNotificaciones.Presentación\obj\Debug\appNotificaciones.Presentación.pdb

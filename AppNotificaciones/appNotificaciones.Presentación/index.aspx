@@ -15,7 +15,16 @@
         <asp:Label ID="LblDatosUsuario" runat="server" ></asp:Label>
         
         <asp:Label ID="LblDatosNotificaciones" runat="server"></asp:Label>
+    
+ 
+        <asp:Table ID="TablaNotificaciones" runat="server" Height="197px" Width="347px">
             
+        </asp:Table>
+
+
+    
+    
+ 
     </form>
 </body>
 </html>

@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using appNotificaciones.Entidades;
+using System.Data.SqlClient;
 
 namespace appNotificaciones.Datos.AccesoDatos
 {
@@ -41,6 +42,25 @@ namespace appNotificaciones.Datos.AccesoDatos
                 return db.notificaciones_usuarios.ToList();
             }
 
+        }
+
+        public class NotificacionesDB_Conexion
+        {
+            private SqlConnection Conexion = new SqlConnection("Server=DESKTOP-UEPK13H\\RONETJOHN;DataBase= Practica;Integrated Security=true");
+
+            public SqlConnection AbrirConexion()
+            {
+                if (Conexion.State == ConnectionState.Closed)
+                    Conexion.Open();
+                return Conexion;
+            }
+
+            public SqlConnection CerrarConexion()
+            {
+                if (Conexion.State == ConnectionState.Open)
+                    Conexion.Close();
+                return Conexion;
+            }
         }
 
 
